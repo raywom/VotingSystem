@@ -24,7 +24,6 @@ var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 app.UseMiddleware<ExceptionMiddleware>();
-
 app.UseXContentTypeOptions();
 app.UseReferrerPolicy(opt => opt.NoReferrer());
 app.UseXXssProtection(opt => opt.EnabledWithBlockMode());
@@ -36,18 +35,12 @@ app.UseCsp(opt => opt
     .FormActions(s => s.Self())
     .FrameAncestors(s => s.Self())
     .ImageSources(s => s.Self().CustomSources("blob:", "https://res.cloudinary.com", "https://platform-lookaside.fbsbx.com"))
-    .ScriptSources(s => s.Self())
 );
 
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI(c =>
-    {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-        c.RoutePrefix = "";
-    });
-    
+    app.UseSwaggerUI();
 }
 else 
 {
@@ -57,7 +50,6 @@ else
         await next.Invoke();
     });
 }
-
 app.UseCors("CorsPolicy");
 
 app.UseAuthentication();

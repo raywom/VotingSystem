@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
-    public class PollController : BaseApiController
+    public class PollsController : BaseApiController
     {
         [HttpGet]
         public async Task<IActionResult> GetPolls([FromQuery] PollParams param)

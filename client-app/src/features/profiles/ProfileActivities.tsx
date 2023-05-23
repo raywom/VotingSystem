@@ -33,7 +33,7 @@ export default observer(function ProfileActivities() {
         <Tab.Pane loading={loadingActivities}>
             <Grid>
                 <Grid.Column width={16}>
-                    <Header floated='left' icon='calendar' content={'Activities'} />
+                    <Header floated='left' icon='calendar' content={'Polls'} />
                 </Grid.Column>
                 <Grid.Column width={16}>
                     <Tab

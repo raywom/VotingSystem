@@ -39,23 +39,41 @@ namespace Persistence
                     await userManager.CreateAsync(user, "Pa$$w0rd");
                 }
 
-                // var activities = new List<Poll>
-                // {
-                //     new Poll
-                //     {
-                //         Title = "Past Activity 1",
-                //         CloseDate = DateTime.UtcNow.AddMonths(-2),
-                //         Description = "Activity 2 months ago",
-                //         Category = "drinks",
-                //         Voters = new List<Vote>
-                //         {
-                //             new Vote
-                //             {
-                //                 AppUser = users[0],
-                //                 IsHost = true,
-                //             }
-                //         }
-                //     },
+                var choices = new List<Choice>
+                {
+                    new Choice
+                    {
+                        Title = "Choice 1"
+                    },
+                    new Choice
+                    {
+                        Title = "Choice 2"
+                    },
+                    new Choice
+                    {
+                        Title = "Choice 3"
+                    },
+                };
+
+                var activities = new List<Poll>
+                {
+                    new Poll
+                    {
+                        Title = "Future Activity 1",
+                        CloseDate = DateTime.UtcNow.AddMonths(2),
+                        Description = "Activity 1",
+                        Category = "drinks",
+                        Choices = choices,
+                        Voters = new List<Vote>
+                        {
+                            new Vote
+                            {
+                                AppUser = users[0],
+                                IsHost = true,
+                                Choice = choices[0]
+                            }
+                        }
+                    },
                 //     new Poll
                 //     {
                 //         Title = "Past Activity 2",
@@ -231,9 +249,9 @@ namespace Persistence
                 //             },
                 //         }
                 //     }
-                //};
+                };
 
-                // await context.Polls.AddRangeAsync(activities);
+                await context.Polls.AddRangeAsync(activities);
                 await context.SaveChangesAsync();
             }
         }
