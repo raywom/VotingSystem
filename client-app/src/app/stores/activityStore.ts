@@ -75,7 +75,7 @@ export default class ActivityStore {
     get groupedActivities() {
         return Object.entries(
             this.activitiesByDate.reduce((activities, activity) => {
-                const date = activity.date!.toISOString().split('T')[0];
+                const date = activity.closeDate!.toISOString().split('T')[0];
                 activities[date] = activities[date] ? [...activities[date], activity] : [activity];
                 return activities;
             }, {} as { [key: string]: Activity[] })
@@ -84,7 +84,7 @@ export default class ActivityStore {
 
     get activitiesByDate() {
         return Array.from(this.activityRegistry.values()).sort((a, b) =>
-            a.date!.getTime() - b.date!.getTime());
+            a.closeDate!.getTime() - b.closeDate!.getTime());
     }
 
     loadActivities = async () => {
@@ -130,13 +130,13 @@ export default class ActivityStore {
     private setActivity = (activity: Activity) => {
         const user = store.userStore.user;
         if (user) {
-            activity.isGoing = activity.attendees!.some(
+            activity.isGoing = activity.voters!.some(
                 a => a.username === user.username
             );
             activity.isHost = activity.hostUsername === user.username;
-            activity.host = activity.attendees?.find(x => x.username === activity.hostUsername);
+            activity.host = activity.voters?.find(x => x.username === activity.hostUsername);
         }
-        activity.date = new Date(activity.date!);
+        activity.closeDate = new Date(activity.closeDate!);
         this.activityRegistry.set(activity.id, activity);
     }
 
@@ -155,7 +155,7 @@ export default class ActivityStore {
             await agent.Activities.create(activity);
             const newActivity = new Activity(activity);
             newActivity.hostUsername = user!.username;
-            newActivity.attendees = [profile];
+            newActivity.voters = [profile];
             this.setActivity(newActivity);
             runInAction(() => this.selectedActivity = newActivity);
         } catch (error) {
@@ -194,18 +194,18 @@ export default class ActivityStore {
         }
     }
 
-    updateAttendeance = async () => {
+    updateAttendance = async () => {
         const user = store.userStore.user;
         this.loading = true;
         try {
             await agent.Activities.attend(this.selectedActivity!.id);
             runInAction(() => {
                 if (this.selectedActivity?.isGoing) {
-                    this.selectedActivity.attendees = this.selectedActivity.attendees?.filter(a => a.username !== user?.username);
+                    this.selectedActivity.voters = this.selectedActivity.voters?.filter(a => a.username !== user?.username);
                     this.selectedActivity.isGoing = false;
                 } else {
                     const attendee = new Profile(user!);
-                    this.selectedActivity?.attendees?.push(attendee);
+                    this.selectedActivity?.voters?.push(attendee);
                     this.selectedActivity!.isGoing = true;
                 }
                 this.activityRegistry.set(this.selectedActivity!.id, this.selectedActivity!);
@@ -238,7 +238,7 @@ export default class ActivityStore {
 
     updateAttendeeFollowing = (username: string) => {
         this.activityRegistry.forEach(activity => {
-            activity.attendees.forEach((attendee: Profile) => {
+            activity.voters.forEach((attendee: Profile) => {
                 if (attendee.username === username) {
                     attendee.following ? attendee.followersCount-- : attendee.followersCount++;
                     attendee.following = !attendee.following;

@@ -5,7 +5,7 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
 
-namespace Application.VotingSystem
+namespace Application.Polls
 {
     public class UpdateVote
     {
@@ -32,12 +32,13 @@ namespace Application.VotingSystem
 
                 if (activity == null) return null;
 
-                var user = await _context.Users.FirstOrDefaultAsync(x => x.UserName == _userAccessor.GetUsername());
+                var user = await _context.Users.FirstOrDefaultAsync(x => x.UserName == _userAccessor.GetUsername(), cancellationToken: cancellationToken);
 
                 if (user == null) return null;
-
-                var hostUsername = activity.Voters.FirstOrDefault(x => x.IsHost)?.AppUser.UserName;
-
+                
+                //get hostusername from activity.IsHost
+                var hostUsername = await _context.Polls.Where(x => x.IsHost == true).Select(x => x.Voters).FirstOrDefaultAsync(cancellationToken: cancellationToken);
+                
                 var attendance = activity.Voters.FirstOrDefault(x => x.AppUser.UserName == user.UserName);
 
                 if (attendance != null && hostUsername == user.UserName)

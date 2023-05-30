@@ -43,12 +43,11 @@ export default function ActivityListItem({ activity }: Props) {
             </Segment>
             <Segment>
                 <span>
-                    <Icon name='clock' /> {format(activity.date!, 'dd MMM yyyy h:mm aa')}
-                    <Icon name='marker' /> {activity.venue}
+                    <Icon name='clock' /> {format(activity.closeDate!, 'dd MMM yyyy h:mm aa')}
                 </span>
             </Segment>
             <Segment secondary>
-                <ActivityListItemAttendee attendees={activity.attendees!} />
+                <ActivityListItemAttendee attendees={activity.voters!} />
             </Segment>
             <Segment clearing>
                 <span>{activity.description}</span>

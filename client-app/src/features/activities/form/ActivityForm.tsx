@@ -13,6 +13,7 @@ import MySelectInput from '../../../app/common/form/MySelectInput';
 import { categoryOptions } from '../../../app/common/options/categoryOptions';
 import MyDateInput from '../../../app/common/form/MyDateInput';
 import { ActivityFormValues } from '../../../app/models/activity';
+import MyCustomSelectInput from "../../../app/common/form/MyCustomSelectInput";
 
 export default observer(function ActivityForm() {
     const { activityStore } = useStore();
@@ -26,9 +27,7 @@ export default observer(function ActivityForm() {
         title: Yup.string().required('The event title is required'),
         category: Yup.string().required('The event category is required'),
         description: Yup.string().required(),
-        date: Yup.string().required('Date is required').nullable(),
-        venue: Yup.string().required(),
-        city: Yup.string().required(),
+        closeDate: Yup.string().required('Date is required')
     })
 
     useEffect(() => {
@@ -48,7 +47,9 @@ export default observer(function ActivityForm() {
     }
 
     if (loadingInitial) return <LoadingComponent content='Loading activity...' />
+    const categoryOptions1: any[] = [
 
+    ]
     return (
         <Segment clearing>
             <Header content='Activity Details' sub color='teal' />
@@ -62,12 +63,9 @@ export default observer(function ActivityForm() {
                         <MyTextInput name='title' placeholder='Title' />
                         <MyTextArea rows={3} name='description' placeholder='Description' />
                         <MySelectInput options={categoryOptions} name='category' placeholder='Category' />
-                        <MyDateInput name='date' placeholderText='Date' showTimeSelect timeCaption='time' dateFormat='MMMM d, yyyy h:mm aa' />
-
-                        <Header content='Location Details' sub color='teal' />
-                        <MyTextInput name='venue' placeholder='Venue' />
-                        <MyTextInput name='city' placeholder='city' />
-                        <Button 
+                        <MyCustomSelectInput name ='choices' placeholder='Choices'/>
+                        <MyDateInput name='closeDate' placeholderText='Date' showTimeSelect timeCaption='time' dateFormat='MMMM d, yyyy h:mm aa' />
+                        <Button
                             disabled={isSubmitting || !dirty || !isValid}
                             loading={isSubmitting} 
                             floated='right' 

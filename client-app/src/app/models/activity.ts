@@ -5,14 +5,14 @@ export interface Activity {
     title: string;
     description: string;
     category: string;
-    date: Date | null;
-    city: string;
-    venue: string;
+    createDate: Date | null;
+    choices: string[];
+    closeDate: Date;
     hostUsername?: string;
     isCancelled?: boolean;
     isGoing?: boolean;
     isHost?: boolean
-    attendees: Profile[]
+    voters: Profile[]
     host?: Profile;
 }
 
@@ -22,9 +22,8 @@ export class ActivityFormValues
     title: string = '';
     category: string = '';
     description: string = '';
-    date: Date | null = null;
-    city: string = '';
-    venue: string = '';
+    choices: string[] = [];
+    closeDate: Date | null = null;
 
 	  constructor(activity?: ActivityFormValues) {
       if (activity) {
@@ -32,9 +31,8 @@ export class ActivityFormValues
         this.title = activity.title;
         this.category = activity.category;
         this.description = activity.description;
-        this.date = activity.date;
-        this.venue = activity.venue;
-        this.city = activity.city;
+        this.choices = activity.choices;
+        this.closeDate = activity.closeDate;
       }
     }
 

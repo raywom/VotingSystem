@@ -45,12 +45,14 @@ namespace Application.VotingSystem
                     Poll = request.Poll,
                     IsHost = true
                 };
-
+                
+                
+                
                 request.Poll.Voters.Add(attendee);
 
                 _context.Polls.Add(request.Poll);
 
-                var result = await _context.SaveChangesAsync() > 0;
+                var result = await _context.SaveChangesAsync(cancellationToken) > 0;
 
                 if (!result) return Result<Unit>.Failure("Failed to create activity");
 

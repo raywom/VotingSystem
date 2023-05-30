@@ -7,6 +7,7 @@ namespace Domain
 {
     public class Vote
     {
+        public Guid Id { get; set; }
         public string AppUserId { get; set; }
         public AppUser AppUser { get; set; }
         public Guid PollId { get; set; }

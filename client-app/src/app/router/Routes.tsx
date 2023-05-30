@@ -17,7 +17,7 @@ export const routes: RouteObject[] = [
             {element: <RequireAuth />, children: [
                 {path: 'polls', element: <ActivityDashboard />},
                 {path: 'polls/:id', element: <ActivityDetails />},
-                {path: 'createActivity', element: <ActivityForm key='create' />},
+                {path: 'createPoll', element: <ActivityForm key='create' />},
                 {path: 'manage/:id', element: <ActivityForm key='manage' />},
                 {path: 'profiles/:username', element: <ProfilePage />},
                 {path: 'errors', element: <TestErrors />}

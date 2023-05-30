@@ -219,6 +219,9 @@ namespace Persistence.Migrations
                     b.Property<Guid>("ChoiceId")
                         .HasColumnType("uuid");
 
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uuid");
+
                     b.Property<bool>("IsHost")
                         .HasColumnType("boolean");
 

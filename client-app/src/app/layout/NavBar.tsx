@@ -15,7 +15,7 @@ export default observer(function NavBar() {
                 <Menu.Item as={NavLink} to='/polls' name='Polls' />
                 <Menu.Item as={NavLink} to='/errors' name='Errors' />
                 <Menu.Item>
-                    <Button as={NavLink} to='/createActivity' positive content='Create Activity' />
+                    <Button as={NavLink} to='/createPoll' positive content='Create Poll' />
                 </Menu.Item>
                 <Menu.Item position='right'>
                     <Image avatar spaced='right' src={user?.image || '/assets/user.png'} />

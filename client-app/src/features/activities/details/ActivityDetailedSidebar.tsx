@@ -7,8 +7,8 @@ interface Props {
     activity: Activity
 }
 
-export default observer(function ActivityDetailedSidebar ({activity: {attendees, host}}: Props) {
-    if (!attendees) return null;
+export default observer(function ActivityDetailedSidebar ({activity: {voters, host}}: Props) {
+    if (!voters) return null;
     return (
         <>
             <Segment
@@ -19,11 +19,11 @@ export default observer(function ActivityDetailedSidebar ({activity: {attendees,
                 inverted
                 color='teal'
             >
-                {attendees.length} {attendees.length === 1 ? 'Person' : 'People'} going
+                {voters.length} {voters.length === 1 ? 'Person' : 'People'} going
             </Segment>
             <Segment attached>
                 <List relaxed divided>
-                    {attendees.map(attendee => (
+                    {voters.map(attendee => (
                         <Item key={attendee.username} style={{ position: 'relative' }}>
                             {attendee.username === host?.username &&
                             <Label

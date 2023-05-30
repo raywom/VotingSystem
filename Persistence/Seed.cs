@@ -71,7 +71,19 @@ namespace Persistence
                                 AppUser = users[0],
                                 IsHost = true,
                                 Choice = choices[0]
-                            }
+                            },
+                            new Vote
+                            {
+                                AppUser = users[1],
+                                IsHost = false,
+                                Choice = choices[1]
+                            },
+                            new Vote
+                            {
+                                AppUser = users[2],
+                                IsHost = false,
+                                Choice = choices[2]
+                            },
                         }
                     },
                 //     new Poll

@@ -24,7 +24,7 @@ interface Props {
 }
 
 export default observer(function ActivityDetailedHeader({ activity }: Props) {
-    const { activityStore: { updateAttendeance, loading, cancelActivityToggle } } = useStore();
+    const { activityStore: { updateAttendance, loading, cancelActivityToggle } } = useStore();
     return (
         <Segment.Group>
             <Segment basic attached='top' style={{ padding: '0' }}>
@@ -41,7 +41,7 @@ export default observer(function ActivityDetailedHeader({ activity }: Props) {
                                     content={activity.title}
                                     style={{ color: 'white' }}
                                 />
-                                <p>{format(activity.date!, 'dd MMM yyyy')}</p>
+                                <p>{format(activity.closeDate!, 'dd MMM yyyy')}</p>
                                 <p>
                                     Hosted by <strong><Link to={`/profiles/${activity.hostUsername}`}>{activity.hostUsername}</Link></strong>
                                 </p>
@@ -73,10 +73,10 @@ export default observer(function ActivityDetailedHeader({ activity }: Props) {
                     </>
 
                 ) : activity.isGoing ? (
-                    <Button onClick={updateAttendeance} 
+                    <Button onClick={updateAttendance}
                         loading={loading}>Cancel attendance</Button>
                 ) : (
-                    <Button disabled={activity.isCancelled} onClick={updateAttendeance} 
+                    <Button disabled={activity.isCancelled} onClick={updateAttendance}
                         loading={loading} color='teal'>Join Activity</Button>
                 )}
             </Segment>

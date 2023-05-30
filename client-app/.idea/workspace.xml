@@ -5,57 +5,71 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c623b06b-6f23-4060-a260-634f90dc778a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/.idea.Reactivities/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Persistence/Migrations/20230522232644_SecondMigration.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Persistence/Migrations/20230522232644_SecondMigration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Persistence/Migrations/20230522232914_ThirdMigration.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Persistence/Migrations/20230522232914_ThirdMigration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Persistence/Migrations/20230522232952_FourthMigration.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Persistence/Migrations/20230522232952_FourthMigration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Persistence/Migrations/20230522233559_FifthMigration.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Persistence/Migrations/20230522233559_FifthMigration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.idea.Reactivities/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.idea.Reactivities/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../API/API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../API/API.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../API/Controllers/PollController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../API/Controllers/PollsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../API/Extensions/ApplicationServiceExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../API/Extensions/ApplicationServiceExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../API/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../API/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../API/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../API/bin/Debug/net7.0/API.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/../API/bin/Debug/net7.0/API.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/common/form/MyCustomSelectInput.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.idea.VotingSystem/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.idea.VotingSystem/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.idea.VotingSystem/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.idea.VotingSystem/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../API/bin/Debug/net7.0/API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../API/bin/Debug/net7.0/API.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../API/bin/Debug/net7.0/API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../API/bin/Debug/net7.0/API.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../API/bin/Debug/net7.0/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../API/bin/Debug/net7.0/Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../API/bin/Debug/net7.0/Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../API/bin/Debug/net7.0/Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/bin/Debug/net7.0/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../API/bin/Debug/net7.0/Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/bin/Debug/net7.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../API/bin/Debug/net7.0/Domain.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../API/bin/Debug/net7.0/Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../API/bin/Debug/net7.0/Infrastructure.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../API/bin/Debug/net7.0/Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../API/bin/Debug/net7.0/Infrastructure.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../API/bin/Debug/net7.0/Microsoft.AspNetCore.OpenApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../API/bin/Debug/net7.0/Microsoft.AspNetCore.OpenApi.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../API/bin/Debug/net7.0/Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../API/bin/Debug/net7.0/Persistence.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../API/bin/Debug/net7.0/Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../API/bin/Debug/net7.0/Persistence.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../API/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../API/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../API/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../API/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../API/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../API/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../API/obj/API.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../API/obj/API.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../API/obj/Debug/net7.0/API.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../API/obj/Debug/net7.0/API.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../API/obj/Debug/net7.0/API.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../API/obj/Debug/net7.0/API.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../API/obj/Debug/net7.0/API.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../API/obj/Debug/net7.0/API.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../API/obj/Debug/net7.0/API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../API/obj/Debug/net7.0/API.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../API/obj/Debug/net7.0/API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../API/obj/Debug/net7.0/API.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../API/obj/Debug/net7.0/ref/API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../API/obj/Debug/net7.0/ref/API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../API/obj/Debug/net7.0/refint/API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../API/obj/Debug/net7.0/refint/API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../API/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../API/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../API/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../API/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../API/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../API/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../API/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/wwwroot/assets/categoryImages/culture.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../API/wwwroot/assets/categoryImages/culture.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/wwwroot/assets/categoryImages/drinks.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../API/wwwroot/assets/categoryImages/drinks.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/wwwroot/assets/categoryImages/film.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../API/wwwroot/assets/categoryImages/film.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/wwwroot/assets/categoryImages/food.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../API/wwwroot/assets/categoryImages/food.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/wwwroot/assets/categoryImages/music.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../API/wwwroot/assets/categoryImages/music.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/wwwroot/assets/categoryImages/travel.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../API/wwwroot/assets/categoryImages/travel.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/wwwroot/assets/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../API/wwwroot/assets/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/wwwroot/assets/placeholder.png" beforeDir="false" afterPath="$PROJECT_DIR$/../API/wwwroot/assets/placeholder.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/wwwroot/assets/user.png" beforeDir="false" afterPath="$PROJECT_DIR$/../API/wwwroot/assets/user.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/wwwroot/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../API/wwwroot/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/wwwroot/logo192.png" beforeDir="false" afterPath="$PROJECT_DIR$/../API/wwwroot/logo192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/wwwroot/logo512.png" beforeDir="false" afterPath="$PROJECT_DIR$/../API/wwwroot/logo512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/wwwroot/static/media/brand-icons.278156e41e0ad908cf7f.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/../API/wwwroot/static/media/brand-icons.278156e41e0ad908cf7f.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/wwwroot/static/media/brand-icons.65a2fb6d9aaa164b41a0.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../API/wwwroot/static/media/brand-icons.65a2fb6d9aaa164b41a0.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/wwwroot/static/media/brand-icons.cac87dc00c87a5d74711.woff" beforeDir="false" afterPath="$PROJECT_DIR$/../API/wwwroot/static/media/brand-icons.cac87dc00c87a5d74711.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/wwwroot/static/media/brand-icons.d68fa3e67dbb653a13ce.eot" beforeDir="false" afterPath="$PROJECT_DIR$/../API/wwwroot/static/media/brand-icons.d68fa3e67dbb653a13ce.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/wwwroot/static/media/flags.99f63ae7a743f21ab308.png" beforeDir="false" afterPath="$PROJECT_DIR$/../API/wwwroot/static/media/flags.99f63ae7a743f21ab308.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/wwwroot/static/media/icons.38c6d8bab26db77d8c80.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/../API/wwwroot/static/media/icons.38c6d8bab26db77d8c80.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/wwwroot/static/media/icons.425399f81e4ce7cbd967.woff" beforeDir="false" afterPath="$PROJECT_DIR$/../API/wwwroot/static/media/icons.425399f81e4ce7cbd967.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/wwwroot/static/media/icons.a01e3f2d6c83dc3aee17.eot" beforeDir="false" afterPath="$PROJECT_DIR$/../API/wwwroot/static/media/icons.a01e3f2d6c83dc3aee17.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/wwwroot/static/media/icons.c656b8caa454ed19b9a2.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../API/wwwroot/static/media/icons.c656b8caa454ed19b9a2.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/wwwroot/static/media/outline-icons.5367103510b27b784827.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../API/wwwroot/static/media/outline-icons.5367103510b27b784827.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/wwwroot/static/media/outline-icons.687a4990ea22bb1a49d4.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/../API/wwwroot/static/media/outline-icons.687a4990ea22bb1a49d4.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/wwwroot/static/media/outline-icons.752905fa5edf21fc52a1.eot" beforeDir="false" afterPath="$PROJECT_DIR$/../API/wwwroot/static/media/outline-icons.752905fa5edf21fc52a1.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/wwwroot/static/media/outline-icons.ddae9b1ba9b0b42f5880.woff" beforeDir="false" afterPath="$PROJECT_DIR$/../API/wwwroot/static/media/outline-icons.ddae9b1ba9b0b42f5880.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Application/Polls/Create.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Application/Polls/Create.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Application/Polls/UpdateVote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Application/Polls/UpdateVote.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Application/bin/Debug/net7.0/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Application/bin/Debug/net7.0/Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Application/bin/Debug/net7.0/Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Application/bin/Debug/net7.0/Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Application/bin/Debug/net7.0/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Application/bin/Debug/net7.0/Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Application/bin/Debug/net7.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Application/bin/Debug/net7.0/Domain.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Application/bin/Debug/net7.0/Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Application/bin/Debug/net7.0/Persistence.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Application/bin/Debug/net7.0/Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Application/bin/Debug/net7.0/Persistence.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Application/obj/Debug/net7.0/Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Application/obj/Debug/net7.0/Application.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Application/obj/Debug/net7.0/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Application/obj/Debug/net7.0/Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Application/obj/Debug/net7.0/Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Application/obj/Debug/net7.0/Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Application/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Domain/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Application/obj/Debug/net7.0/ref/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Application/obj/Debug/net7.0/ref/Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Application/obj/Debug/net7.0/refint/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Application/obj/Debug/net7.0/refint/Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Domain/Vote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Domain/Vote.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Domain/bin/Debug/net7.0/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Domain/bin/Debug/net7.0/Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Domain/bin/Debug/net7.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Domain/bin/Debug/net7.0/Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Domain/obj/Debug/net7.0/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Domain/obj/Debug/net7.0/Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Domain/obj/Debug/net7.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Domain/obj/Debug/net7.0/Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Domain/obj/Debug/net7.0/ref/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Domain/obj/Debug/net7.0/ref/Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Domain/obj/Debug/net7.0/refint/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Domain/obj/Debug/net7.0/refint/Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Infrastructure/bin/Debug/net7.0/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Infrastructure/bin/Debug/net7.0/Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Infrastructure/bin/Debug/net7.0/Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Infrastructure/bin/Debug/net7.0/Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Infrastructure/bin/Debug/net7.0/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Infrastructure/bin/Debug/net7.0/Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Infrastructure/bin/Debug/net7.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Infrastructure/bin/Debug/net7.0/Domain.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Infrastructure/bin/Debug/net7.0/Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Infrastructure/bin/Debug/net7.0/Infrastructure.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Infrastructure/bin/Debug/net7.0/Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Infrastructure/bin/Debug/net7.0/Infrastructure.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Infrastructure/bin/Debug/net7.0/Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Infrastructure/bin/Debug/net7.0/Persistence.dll" afterDir="false" />
@@ -63,32 +77,51 @@
       <change beforePath="$PROJECT_DIR$/../Infrastructure/obj/Debug/net7.0/Infrastructure.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Infrastructure/obj/Debug/net7.0/Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Infrastructure/obj/Debug/net7.0/Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Infrastructure/obj/Debug/net7.0/Infrastructure.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Infrastructure/obj/Debug/net7.0/Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Infrastructure/obj/Debug/net7.0/Infrastructure.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Infrastructure/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Persistence/Migrations/DataContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Persistence/Migrations/DataContextModelSnapshot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Persistence/Seed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Persistence/Seed.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Persistence/bin/Debug/net7.0/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Persistence/bin/Debug/net7.0/Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Persistence/bin/Debug/net7.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Persistence/bin/Debug/net7.0/Domain.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Persistence/bin/Debug/net7.0/Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Persistence/bin/Debug/net7.0/Persistence.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Persistence/bin/Debug/net7.0/Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Persistence/bin/Debug/net7.0/Persistence.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Persistence/obj/Debug/net7.0/Persistence.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Persistence/obj/Debug/net7.0/Persistence.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Persistence/obj/Debug/net7.0/Persistence.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Persistence/obj/Debug/net7.0/Persistence.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Persistence/obj/Debug/net7.0/Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Persistence/obj/Debug/net7.0/Persistence.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Persistence/obj/Debug/net7.0/Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Persistence/obj/Debug/net7.0/Persistence.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Persistence/obj/Debug/net7.0/ref/Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Persistence/obj/Debug/net7.0/ref/Persistence.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Persistence/obj/Debug/net7.0/refint/Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Persistence/obj/Debug/net7.0/refint/Persistence.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Persistence/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Persistence/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/layout/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout/NavBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/models/activity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/activity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/models/profile.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/profile.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/router/Routes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/router/Routes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/activities/details/ActivityDetailedChat.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/activities/details/ActivityDetailedChat.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/home/HomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/home/HomePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/stores/activityStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/stores/activityStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/stores/commentStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/stores/commentStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/activities/dashboard/ActivityListItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/activities/dashboard/ActivityListItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/activities/details/ActivityDetailedHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/activities/details/ActivityDetailedHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/activities/details/ActivityDetailedInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/activities/details/ActivityDetailedInfo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/activities/details/ActivityDetailedSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/activities/details/ActivityDetailedSidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/activities/form/ActivityForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/activities/form/ActivityForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/profiles/ProfileActivities.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/profiles/ProfileActivities.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/users/LoginForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/users/LoginForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/users/RegsiterForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/users/RegsiterForm.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.es5.d.ts" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/node_modules/yup/lib/index.d.ts" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -110,11 +143,33 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "C:\\Users\\nomad\\Documents\\GitHub\\Reactivities\\client-app\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.rcb.reactComponents" value="false" />
+        <entry key="com.haulmont.rcb.reactInspector" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.start">
+    <configuration name="localhost:3000" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -127,7 +182,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.localhost:3000" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -142,11 +199,76 @@
       <workItem from="1684341691878" duration="635000" />
       <workItem from="1684592179693" duration="1967000" />
       <workItem from="1684617786189" duration="2429000" />
-      <workItem from="1684874239090" duration="722000" />
+      <workItem from="1684874239090" duration="1906000" />
+      <workItem from="1685197029925" duration="1452000" />
+      <workItem from="1685205365573" duration="3481000" />
+      <workItem from="1685208900567" duration="3614000" />
+      <workItem from="1685269735875" duration="3999000" />
+      <workItem from="1685288255115" duration="593000" />
+      <workItem from="1685303566290" duration="6988000" />
+      <workItem from="1685402633547" duration="611000" />
+      <workItem from="1685466545457" duration="9019000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/api/agent.ts</url>
+          <line>79</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/stores/activityStore.ts</url>
+          <line>151</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/stores/activityStore.ts</url>
+          <line>155</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/stores/activityStore.ts</url>
+          <line>154</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/models/activity.ts</url>
+          <line>28</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/stores/activityStore.ts</url>
+          <line>61</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/features/activities/form/ActivityForm.tsx</url>
+          <line>18</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/models/profile.ts</url>
+          <line>31</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

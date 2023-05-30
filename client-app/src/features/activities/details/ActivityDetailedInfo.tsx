@@ -28,7 +28,7 @@ export default observer(function ActivityDetailedInfo({ activity }: Props) {
                     </Grid.Column>
                     <Grid.Column width={15}>
                         <span>
-                            {format(activity.date!, 'dd MMM yyyy h:mm aa')}
+                            {format(activity.closeDate!, 'dd MMM yyyy h:mm aa')}
                         </span>
                     </Grid.Column>
                 </Grid>
@@ -37,9 +37,6 @@ export default observer(function ActivityDetailedInfo({ activity }: Props) {
                 <Grid verticalAlign='middle'>
                     <Grid.Column width={1}>
                         <Icon name='marker' size='large' color='teal' />
-                    </Grid.Column>
-                    <Grid.Column width={11}>
-                        <span>{activity.venue}, {activity.city}</span>
                     </Grid.Column>
                 </Grid>
             </Segment>
