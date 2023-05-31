@@ -12,8 +12,7 @@ namespace Application.Core
             string currentUsername = null;
             CreateMap<Poll, Poll>();
             CreateMap<Poll, PollDto>()
-                .ForMember(d => d.HostUsername, o => o.MapFrom(s => s.Voters
-                    .FirstOrDefault(x => x.IsHost).AppUser.UserName));
+                .ForMember(d => d.HostUsername, o => o.MapFrom(s => s.AppUser.UserName));
             CreateMap<Vote, VoterDto>()
                 .ForMember(d => d.DisplayName, o => o.MapFrom(s => s.AppUser.DisplayName))
                 .ForMember(d => d.Username, o => o.MapFrom(s => s.AppUser.UserName))
@@ -39,7 +38,7 @@ namespace Application.Core
                 .ForMember(d => d.Title, o => o.MapFrom(s => s.Poll.Title))
                 .ForMember(d => d.Category, o => o.MapFrom(s => s.Poll.Category))
                 .ForMember(d => d.HostUsername, o => o.MapFrom(s =>
-                    s.Poll.Voters.FirstOrDefault(x => x.IsHost).AppUser.UserName));
+                    s.Poll.AppUser.UserName));
         }
     }
 }

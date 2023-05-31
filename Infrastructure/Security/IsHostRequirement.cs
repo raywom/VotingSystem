@@ -27,16 +27,20 @@ namespace Infrastructure.Security
             if (userId == null) return Task.CompletedTask;
 
             var activityId = Guid.Parse(_httpContextAccessor.HttpContext?.Request.RouteValues
-                .SingleOrDefault(x => x.Key == "id").Value?.ToString());
+                .SingleOrDefault(x => x.Key == "id").Value?.ToString() ?? throw new InvalidOperationException());
 
             var attendee = _dbContext.Voters
                 .AsNoTracking()
                 .FirstOrDefaultAsync(x => x.AppUserId == userId && x.PollId == activityId)
                 .Result;
+            var poll = _dbContext.Polls
+                .AsNoTracking()
+                .FirstOrDefaultAsync(x => x.Id == activityId && x.AppUserId == userId)
+                .Result;
 
             if (attendee == null) return Task.CompletedTask;
 
-            if (attendee.IsHost) context.Succeed(requirement);
+            if (poll.IsHost) context.Succeed(requirement);
 
             return Task.CompletedTask;
         }

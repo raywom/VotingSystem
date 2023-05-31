@@ -19,7 +19,7 @@ export default observer(function HomePage() {
                     <>
                         <Header as='h2' inverted content={`Welcome back ${userStore.user?.displayName}`} />
                         <Button as={Link} to='/polls' size='huge' inverted>
-                            Go to activities!
+                            Go to polls!
                         </Button>
                     </>
                 ) : (

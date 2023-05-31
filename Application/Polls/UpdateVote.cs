@@ -23,7 +23,7 @@ namespace Application.Polls
                 _userAccessor = userAccessor;
                 _context = context;
             }
-
+//TODO PEREPISAT VSE kenkeles
             public async Task<Result<Unit>> Handle(Command request, CancellationToken cancellationToken)
             {
                 var activity = await _context.Polls
@@ -35,10 +35,8 @@ namespace Application.Polls
                 var user = await _context.Users.FirstOrDefaultAsync(x => x.UserName == _userAccessor.GetUsername(), cancellationToken: cancellationToken);
 
                 if (user == null) return null;
-                
-                //get hostusername from activity.IsHost
-                var hostUsername = await _context.Polls.Where(x => x.IsHost == true).Select(x => x.Voters).FirstOrDefaultAsync(cancellationToken: cancellationToken);
-                
+
+                var hostUsername = _context.Polls.FirstOrDefault(x => x.IsHost)?.AppUser.UserName;
                 var attendance = activity.Voters.FirstOrDefault(x => x.AppUser.UserName == user.UserName);
 
                 if (attendance != null && hostUsername == user.UserName)
@@ -47,17 +45,17 @@ namespace Application.Polls
                 if (attendance != null && hostUsername != user.UserName)
                     activity.Voters.Remove(attendance);
 
-                if (attendance == null)
-                {
-                    attendance = new Vote
-                    {
-                        AppUser = user,
-                        Poll = activity,
-                        IsHost = false
-                    };
-
-                    activity.Voters.Add(attendance);
-                }
+                // if (attendance == null)
+                // {
+                //     attendance = new Vote
+                //     {
+                //         AppUser = user,
+                //         Poll = activity,
+                //         IsHost = false
+                //     };
+                //
+                //     activity.Voters.Add(attendance);
+                // }
 
                 var result = await _context.SaveChangesAsync() > 0;
 

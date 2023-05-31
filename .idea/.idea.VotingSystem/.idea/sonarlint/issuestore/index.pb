@@ -29,8 +29,6 @@ q
 APersistence/Migrations/20230522232644_SecondMigration.Designer.cs,0\5\0521257da9d4546100b617dea19db72edb8e1af9
 p
 @Persistence/Migrations/20230522232914_ThirdMigration.Designer.cs,c\a\caae3295caf5705ef45f20f62963a4d7a5fac837
-Y
-)client-app/src/features/home/HomePage.tsx,4\b\4bc0b75104955ca896f3a93379609456d95a1ed6
 h
 8Persistence/Migrations/20230522232644_SecondMigration.cs,5\9\5949246e83083d84297a8f2980651dbc91565207
 [
@@ -43,19 +41,11 @@ F
 API/WeatherForecast.cs,f\b\fbf0a4ec759e19a4d8c06958a951d85a4b95ac35
 A
 Domain/AppUser.cs,e\2\e2a4f5bfa0ef53c1e34d731cb28b2c9f3549b4ba
-J
-Persistence/DataContext.cs,e\f\ef885b39aad67030d45b4fc068883d1f2b3a0db1
 Z
 *API/wwwroot/static/js/main.0e75fd9a.js.map,b\d\bdd2badfc23b263b0eb4f1211412f4b48c2e0b30
 V
 &API/wwwroot/static/js/main.0e75fd9a.js,b\d\bd404966b4de319175a8e64806d1b101750226fa
 F
 API/wwwroot/index.html,3\e\3e724ce15f2ff9f71f4fe1b3d1e5a5401d4de7c8
-R
-"API/Properties/launchSettings.json,7\c\7c47631329793afa3cd6258a244728b804c8ab2d
-P
- API/appsettings.Development.json,1\9\1954b16dd075ae73405e77c34b7bc3a3c0fdbe46
-D
-API/appsettings.json,c\9\c9ded09c5f665b70d1fa55879c92e686fed68957
 @
 Domain/Choice.cs,b\a\babdd922cd22bc2bd70917d13e5e815ed649660b

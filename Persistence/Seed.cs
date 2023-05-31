@@ -64,24 +64,23 @@ namespace Persistence
                         Description = "Activity 1",
                         Category = "drinks",
                         Choices = choices,
+                        AppUser = users[0],
+                        IsHost = true,
                         Voters = new List<Vote>
                         {
                             new Vote
                             {
                                 AppUser = users[0],
-                                IsHost = true,
                                 Choice = choices[0]
                             },
                             new Vote
                             {
                                 AppUser = users[1],
-                                IsHost = false,
                                 Choice = choices[1]
                             },
                             new Vote
                             {
                                 AppUser = users[2],
-                                IsHost = false,
                                 Choice = choices[2]
                             },
                         }

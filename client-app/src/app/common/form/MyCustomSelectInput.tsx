@@ -38,12 +38,6 @@ export default function MyOwnSelectInput(props: Props) {
         setFieldValue(props.name, updatedOptions);
     };
 
-    const convertToJson = () => {
-        const jsonOptions = JSON.stringify(options);
-        // Do something with the JSON data, such as sending it to an API or storing it in state
-        console.log(jsonOptions);
-    };
-
     return (
         <Form.Field error={meta.touched && !!meta.error}>
             <label>{props.label}</label>
@@ -58,7 +52,6 @@ export default function MyOwnSelectInput(props: Props) {
                 </div>
             ))}
             <Button onClick={addOption} type={"button"}>Add Option</Button>
-            <Button onClick={convertToJson} type={"button"}>Convert to JSON</Button>
             <Select
                 clearable
                 options={options}
