@@ -1,12 +1,44 @@
 import { Profile } from "./profile";
+export class ActivityChoice {
+    constructor(id: string, title: string, pollId: string) {
+        this._id = id;
+        this._title = title;
+        this._pollId = pollId;
+    }
 
+    get pollId(): string {
+        return this._pollId;
+    }
+
+    set pollId(value: string) {
+        this._pollId = value;
+    }
+    get title(): string {
+        return this._title;
+    }
+
+    set title(value: string) {
+        this._title = value;
+    }
+    get id(): string {
+        return this._id;
+    }
+
+    set id(value: string) {
+        this._id = value;
+    }
+    public _id: string;
+    private _title: string;
+    private _pollId: string;
+}
 export interface Activity {
     id: string;
     title: string;
     description: string;
     category: string;
     createDate: Date | null;
-    choices: string[];
+    //array of choices
+    choices: ActivityChoice[];
     closeDate: Date;
     hostUsername?: string;
     isCancelled?: boolean;
@@ -22,7 +54,7 @@ export class ActivityFormValues
     title: string = '';
     category: string = '';
     description: string = '';
-    choices: string[] = [];
+    choices: ActivityChoice[] = [];
     closeDate: Date | null = null;
 
 	  constructor(activity?: ActivityFormValues) {

@@ -1,5 +1,6 @@
 using Application.VotingSystem;
 using Application.Comments;
+using Application.Polls;
 using Application.Profiles;
 using Domain;
 
@@ -12,8 +13,16 @@ namespace Application.Core
             string currentUsername = null;
             CreateMap<Poll, Poll>();
             CreateMap<Poll, PollDto>()
-                .ForMember(d => d.HostUsername, o => o.MapFrom(s => s.AppUser.UserName));
+                .ForMember(d => d.HostUsername, o => o.MapFrom(s => s.AppUser.UserName))
+                .ForMember(d => d.Choices, o => o.MapFrom(s => s.Choices))
+                .ForMember(d => d.Voters, o => o.MapFrom(s => s.Voters))
+                .ForMember(d => d.Comments, o => o.MapFrom(s => s.Comments));
+            CreateMap<Choice, ChoiceDto>()
+                .ForMember(d => d.Id, o => o.MapFrom(s => s.Id))
+                .ForMember(d => d.Title, o => o.MapFrom(s => s.Title))
+                .ForMember(d => d.Title, o => o.MapFrom(s => s.Title));
             CreateMap<Vote, VoterDto>()
+                .ForMember(d => d.Id, o => o.MapFrom(s => s.Poll.Id))
                 .ForMember(d => d.DisplayName, o => o.MapFrom(s => s.AppUser.DisplayName))
                 .ForMember(d => d.Username, o => o.MapFrom(s => s.AppUser.UserName))
                 .ForMember(d => d.Bio, o => o.MapFrom(s => s.AppUser.Bio))
@@ -22,7 +31,7 @@ namespace Application.Core
                 .ForMember(d => d.FollowingCount, o => o.MapFrom(s => s.AppUser.Followings.Count))
                 .ForMember(d => d.Following,
                     o => o.MapFrom(s => s.AppUser.Followers.Any(x => x.Observer.UserName == currentUsername)));
-            CreateMap<AppUser, Profiles.Profile>()
+            CreateMap<AppUser, Profile>()
                 .ForMember(d => d.Image, s => s.MapFrom(o => o.Photos.FirstOrDefault(x => x.IsMain).Url))
                 .ForMember(d => d.FollowersCount, o => o.MapFrom(s => s.Followers.Count))
                 .ForMember(d => d.FollowingCount, o => o.MapFrom(s => s.Followings.Count))

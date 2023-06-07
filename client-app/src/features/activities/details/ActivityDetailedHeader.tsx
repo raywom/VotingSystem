@@ -1,10 +1,11 @@
 import { format } from 'date-fns';
 import { observer } from 'mobx-react-lite';
-import React from 'react'
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Button, Header, Item, Segment, Image, Label } from 'semantic-ui-react'
+import {Button, Header, Item, Segment, Image, Label, Dropdown} from 'semantic-ui-react';
 import { Activity } from "../../../app/models/activity";
 import { useStore } from '../../../app/stores/store';
+import MyOwnSelect from "../../../app/common/form/MyOwnSelect";
 
 const activityImageStyle = {
     filter: 'brightness(30%)'
@@ -25,12 +26,25 @@ interface Props {
 
 export default observer(function ActivityDetailedHeader({ activity }: Props) {
     const { activityStore: { updateAttendance, loading, cancelActivityToggle } } = useStore();
+    const [selectedOption, setSelectedOption] = useState<string | null>(null);
+
+    const handleSubmit = (values: Props) => {
+        // Handle form submission
+        console.log(values);
+    };
+
+    const handleVote = () => {
+        // Handle the vote action here
+        // You can use the selectedOption value to perform the vote action
+        console.log("Voted for:", selectedOption);
+    };
+
     return (
         <Segment.Group>
             <Segment basic attached='top' style={{ padding: '0' }}>
                 {activity.isCancelled &&
                     <Label style={{ position: 'absolute', zIndex: 1000, left: -14, top: 20 }}
-                        ribbon color='red' content='Cancelled' />}
+                           ribbon color='red' content='Cancelled' />}
                 <Image src={`/assets/categoryImages/${activity.category}.jpg`} fluid style={activityImageStyle} />
                 <Segment style={activityImageTextStyle} basic>
                     <Item.Group>
@@ -57,7 +71,7 @@ export default observer(function ActivityDetailedHeader({ activity }: Props) {
                             color={activity.isCancelled ? 'green' : 'red'}
                             floated='left'
                             basic
-                            content={activity.isCancelled ? 'Re-activate activity' : 'Cancel Activity'}
+                            content={activity.isCancelled ? 'Re-activate Poll' : 'Cancel Poll'}
                             onClick={cancelActivityToggle}
                             loading={loading}
                         />
@@ -68,18 +82,31 @@ export default observer(function ActivityDetailedHeader({ activity }: Props) {
                             floated='right'
                             disabled={activity.isCancelled}
                         >
-                            Manage Event
+                            Manage Poll
                         </Button>
                     </>
 
                 ) : activity.isGoing ? (
                     <Button onClick={updateAttendance}
-                        loading={loading}>Cancel attendance</Button>
+                            loading={loading}>Cancel attendance</Button>
                 ) : (
-                    <Button disabled={activity.isCancelled} onClick={updateAttendance}
-                        loading={loading} color='teal'>Join Activity</Button>
+                    <>
+                        <MyOwnSelect
+                            options={activity.choices}
+                            placeholder="Select an option"
+                            name="choice"
+                        />
+                        <Button
+                            onClick={handleVote}
+                            disabled={!selectedOption}
+                            loading={loading}
+                            primary
+                        >
+                            Vote
+                        </Button>
+                    </>
                 )}
             </Segment>
         </Segment.Group>
     )
-})
+});

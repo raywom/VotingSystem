@@ -19,7 +19,7 @@ export default observer(function ActivityDetailedSidebar ({activity: {voters, ho
                 inverted
                 color='teal'
             >
-                {voters.length} {voters.length === 1 ? 'Person' : 'People'} going
+                {voters.length} {voters.length === 1 ? 'Person' : 'People'} voted
             </Segment>
             <Segment attached>
                 <List relaxed divided>

@@ -1,4 +1,5 @@
 using Application.Comments;
+using Application.Polls;
 using Application.Profiles;
 
 namespace Application.VotingSystem;
@@ -15,4 +16,5 @@ public class PollDto
     public bool IsCancelled { get; set; }
     public ICollection<VoterDto> Voters { get; set; }
     public ICollection<CommentDto> Comments { get; set; }
+    public ICollection<ChoiceDto> Choices { get; set; }
 }

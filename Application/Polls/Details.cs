@@ -1,13 +1,13 @@
 using Application.Core;
 using Application.Interfaces;
+using Application.VotingSystem;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
-using Domain;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
 
-namespace Application.VotingSystem
+namespace Application.Polls
 {
     public class Details
     {
