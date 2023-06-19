@@ -7,12 +7,11 @@ using Persistence;
 
 namespace Application.Polls
 {
-    public class UpdateVote
+    public class Cancel
     {
         public class Command : IRequest<Result<Unit>>
         {
             public Guid Id { get; set; }
-            public Guid ChosenOption { get; set; }
         }
 
         public class Handler : IRequestHandler<Command, Result<Unit>>
@@ -24,7 +23,7 @@ namespace Application.Polls
                 _userAccessor = userAccessor;
                 _context = context;
             }
-//TODO PEREPISAT VSE kenkeles
+
             public async Task<Result<Unit>> Handle(Command request, CancellationToken cancellationToken)
             {
                 var activity = await _context.Polls
@@ -36,28 +35,12 @@ namespace Application.Polls
                 var user = await _context.Users.FirstOrDefaultAsync(x => x.UserName == _userAccessor.GetUsername(), cancellationToken: cancellationToken);
 
                 if (user == null) return null;
-
-                var attendance = activity.Voters.FirstOrDefault(x => x.AppUser.UserName == user.UserName);
-
-                if (attendance != null)
-                    activity.Voters.Remove(attendance);
-
-                if (attendance == null)
-                {
-                    attendance = new Vote
-                    {
-                        AppUser = user,
-                        Poll = activity,
-                        IsHost = false,
-                        ChoiceId = request.ChosenOption
-                    };
                 
-                    activity.Voters.Add(attendance);
-                }
+                activity.IsCancelled = !activity.IsCancelled;
 
                 var result = await _context.SaveChangesAsync() > 0;
 
-                return result ? Result<Unit>.Success(Unit.Value) : Result<Unit>.Failure("Problem updating attendance");
+                return result ? Result<Unit>.Success(Unit.Value) : Result<Unit>.Failure("Problem cancelling poll");
             }
         }
     }

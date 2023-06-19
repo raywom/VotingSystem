@@ -7,8 +7,8 @@ import { format } from 'date-fns';
 import { useStore } from "../../app/stores/store";
 
 const panes = [
-    { menuItem: 'Future Events', pane: { key: 'future' } },
-    { menuItem: 'Past Events', pane: { key: 'past' } },
+    { menuItem: 'Future Polls', pane: { key: 'future' } },
+    { menuItem: 'Past Polls', pane: { key: 'past' } },
     { menuItem: 'Hosting', pane: { key: 'hosting' } }
 ];
 
@@ -56,8 +56,8 @@ export default observer(function ProfileActivities() {
                                 <Card.Content>
                                     <Card.Header textAlign='center'>{activity.title}</Card.Header>
                                     <Card.Meta textAlign='center'>
-                                        <div>{format(new Date(activity.closeDate), 'do LLL')}</div>
-                                        <div>{format(new Date(activity.closeDate), 'h:mm a')}</div>
+                                        <div>{format(new Date(activity.date), 'do LLL')}</div>
+                                        <div>{format(new Date(activity.date), 'h:mm a')}</div>
                                     </Card.Meta>
                                 </Card.Content>
                             </Card>

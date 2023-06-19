@@ -1,4 +1,6 @@
-namespace Application.VotingSystem
+using Microsoft.EntityFrameworkCore;
+
+namespace Application.Polls
 {
     public class VoterDto
     {
@@ -10,5 +12,6 @@ namespace Application.VotingSystem
         public bool Following { get; set; }
         public int FollowersCount { get; set; }
         public int FollowingCount { get; set; }
+        public Guid ChoiceId { get; set; }
     }
 }

@@ -4,13 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c623b06b-6f23-4060-a260-634f90dc778a" name="Changes" comment="add">
-      <change afterPath="$PROJECT_DIR$/../Application/Polls/ChoiceDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/common/form/MyOwnSelect.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.idea.VotingSystem/.idea/sonarlint/issuestore/b/a/babdd922cd22bc2bd70917d13e5e815ed649660b" beforeDir="false" />
+    <list default="true" id="c623b06b-6f23-4060-a260-634f90dc778a" name="Changes" comment="add shesh">
+      <change afterPath="$PROJECT_DIR$/../Application/Polls/Cancel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Application/Polls/StopVoting.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Persistence/Migrations/20230615012101_TenthMigration123.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.idea.VotingSystem/.idea/sonarlint/issuestore/0/1/015cb0240de88156e6e65b81eae0ae31daf54a10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.idea.VotingSystem/.idea/sonarlint/issuestore/0/3/03f1cf3c533a5c6f3ab2579788cfb2f7fbad2b90" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.idea.VotingSystem/.idea/sonarlint/issuestore/0/5/0521257da9d4546100b617dea19db72edb8e1af9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.idea.VotingSystem/.idea/sonarlint/issuestore/1/d/1dfa7d85ccd51d461c1f2ff11631c50a7c7dcca9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.idea.VotingSystem/.idea/sonarlint/issuestore/5/9/5949246e83083d84297a8f2980651dbc91565207" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.idea.VotingSystem/.idea/sonarlint/issuestore/8/1/8119e9208a00685c077a4951c7d42b986c9bec13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.idea.VotingSystem/.idea/sonarlint/issuestore/9/b/9bb2f2c15ef632822b477eb6f74fcecab80e69b5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.idea.VotingSystem/.idea/sonarlint/issuestore/b/e/be69c2690b92e528ca303f977927fe10f4e377be" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.idea.VotingSystem/.idea/sonarlint/issuestore/c/a/caae3295caf5705ef45f20f62963a4d7a5fac837" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.idea.VotingSystem/.idea/sonarlint/issuestore/f/5/f57c05e81693f3f1e27911019d076bc67ae4fdff" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/.idea.VotingSystem/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.idea.VotingSystem/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.idea.VotingSystem/.idea/sonarlint/securityhotspotstore/b/a/babdd922cd22bc2bd70917d13e5e815ed649660b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.idea.VotingSystem/.idea/sonarlint/securityhotspotstore/0/1/015cb0240de88156e6e65b81eae0ae31daf54a10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.idea.VotingSystem/.idea/sonarlint/securityhotspotstore/0/3/03f1cf3c533a5c6f3ab2579788cfb2f7fbad2b90" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.idea.VotingSystem/.idea/sonarlint/securityhotspotstore/0/5/0521257da9d4546100b617dea19db72edb8e1af9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.idea.VotingSystem/.idea/sonarlint/securityhotspotstore/1/d/1dfa7d85ccd51d461c1f2ff11631c50a7c7dcca9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.idea.VotingSystem/.idea/sonarlint/securityhotspotstore/5/9/5949246e83083d84297a8f2980651dbc91565207" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.idea.VotingSystem/.idea/sonarlint/securityhotspotstore/8/1/8119e9208a00685c077a4951c7d42b986c9bec13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.idea.VotingSystem/.idea/sonarlint/securityhotspotstore/9/b/9bb2f2c15ef632822b477eb6f74fcecab80e69b5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.idea.VotingSystem/.idea/sonarlint/securityhotspotstore/b/e/be69c2690b92e528ca303f977927fe10f4e377be" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.idea.VotingSystem/.idea/sonarlint/securityhotspotstore/c/a/caae3295caf5705ef45f20f62963a4d7a5fac837" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.idea.VotingSystem/.idea/sonarlint/securityhotspotstore/f/5/f57c05e81693f3f1e27911019d076bc67ae4fdff" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/.idea.VotingSystem/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.idea.VotingSystem/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/Controllers/PollsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../API/Controllers/PollsController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../API/bin/Debug/net7.0/API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../API/bin/Debug/net7.0/API.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../API/bin/Debug/net7.0/API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../API/bin/Debug/net7.0/API.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../API/bin/Debug/net7.0/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../API/bin/Debug/net7.0/Application.dll" afterDir="false" />
@@ -24,9 +44,12 @@
       <change beforePath="$PROJECT_DIR$/../API/obj/Debug/net7.0/API.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../API/obj/Debug/net7.0/API.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../API/obj/Debug/net7.0/API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../API/obj/Debug/net7.0/API.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../API/obj/Debug/net7.0/API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../API/obj/Debug/net7.0/API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/obj/Debug/net7.0/ref/API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../API/obj/Debug/net7.0/ref/API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/obj/Debug/net7.0/refint/API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../API/obj/Debug/net7.0/refint/API.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Application/Core/MappingProfiles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Application/Core/MappingProfiles.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Application/Polls/Details.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Application/Polls/Details.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Application/Polls/PollDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Application/Polls/PollDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Application/Polls/Edit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Application/Polls/Edit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Application/Polls/UpdateVote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Application/Polls/UpdateVote.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Application/Polls/VoterDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Application/Polls/VoterDto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Application/bin/Debug/net7.0/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Application/bin/Debug/net7.0/Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Application/bin/Debug/net7.0/Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Application/bin/Debug/net7.0/Application.pdb" afterDir="false" />
@@ -40,13 +63,11 @@
       <change beforePath="$PROJECT_DIR$/../Application/obj/Debug/net7.0/Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Application/obj/Debug/net7.0/Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Application/obj/Debug/net7.0/ref/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Application/obj/Debug/net7.0/ref/Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Application/obj/Debug/net7.0/refint/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Application/obj/Debug/net7.0/refint/Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Domain/Choice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Domain/Choice.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Domain/Vote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Domain/Vote.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Domain/bin/Debug/net7.0/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Domain/bin/Debug/net7.0/Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Domain/bin/Debug/net7.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Domain/bin/Debug/net7.0/Domain.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Domain/obj/Debug/net7.0/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Domain/obj/Debug/net7.0/Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Domain/obj/Debug/net7.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Domain/obj/Debug/net7.0/Domain.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Domain/obj/Debug/net7.0/ref/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Domain/obj/Debug/net7.0/ref/Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Domain/obj/Debug/net7.0/refint/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Domain/obj/Debug/net7.0/refint/Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Infrastructure/bin/Debug/net7.0/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Infrastructure/bin/Debug/net7.0/Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Infrastructure/bin/Debug/net7.0/Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Infrastructure/bin/Debug/net7.0/Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Infrastructure/bin/Debug/net7.0/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Infrastructure/bin/Debug/net7.0/Domain.dll" afterDir="false" />
@@ -58,19 +79,48 @@
       <change beforePath="$PROJECT_DIR$/../Infrastructure/obj/Debug/net7.0/Infrastructure.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Infrastructure/obj/Debug/net7.0/Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Infrastructure/obj/Debug/net7.0/Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Infrastructure/obj/Debug/net7.0/Infrastructure.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Infrastructure/obj/Debug/net7.0/Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Infrastructure/obj/Debug/net7.0/Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Persistence/DataContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Persistence/DataContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Persistence/Migrations/20230520192943_PostgresInitial.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Persistence/Migrations/20230520192943_PostgresInitial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Persistence/Migrations/20230615011152_TenthMigration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Persistence/Migrations/20230522232644_SecondMigration.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Persistence/Migrations/20230522232644_SecondMigration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Persistence/Migrations/20230522232914_ThirdMigration.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Persistence/Migrations/20230522232914_ThirdMigration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Persistence/Migrations/20230522232952_FourthMigration.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Persistence/Migrations/20230522232952_FourthMigration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Persistence/Migrations/20230522233559_FifthMigration.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Persistence/Migrations/20230522233559_FifthMigration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Persistence/Migrations/20230522234414_SixthMigration.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Persistence/Migrations/20230522234414_SixthMigration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Persistence/Migrations/20230523215836_SeventhMigration.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Persistence/Migrations/20230615011152_TenthMigration.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Persistence/Migrations/20230523215836_SeventhMigration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Persistence/Migrations/20230530235440_EightMigration.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Persistence/Migrations/20230615012101_TenthMigration123.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Persistence/Migrations/20230530235440_EightMigration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Persistence/Migrations/DataContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Persistence/Migrations/DataContextModelSnapshot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Persistence/bin/Debug/net7.0/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Persistence/bin/Debug/net7.0/Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Persistence/bin/Debug/net7.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Persistence/bin/Debug/net7.0/Domain.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Persistence/bin/Debug/net7.0/Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Persistence/bin/Debug/net7.0/Persistence.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Persistence/bin/Debug/net7.0/Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Persistence/bin/Debug/net7.0/Persistence.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Persistence/obj/Debug/net7.0/Persistence.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Persistence/obj/Debug/net7.0/Persistence.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Persistence/obj/Debug/net7.0/Persistence.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Persistence/obj/Debug/net7.0/Persistence.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Persistence/obj/Debug/net7.0/Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Persistence/obj/Debug/net7.0/Persistence.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Persistence/obj/Debug/net7.0/Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Persistence/obj/Debug/net7.0/Persistence.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Persistence/obj/Debug/net7.0/ref/Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Persistence/obj/Debug/net7.0/ref/Persistence.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Persistence/obj/Debug/net7.0/refint/Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Persistence/obj/Debug/net7.0/refint/Persistence.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/common/form/MySelectInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/common/form/MySelectInput.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/agent.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/agent.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/common/form/MyOwnSelect.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/common/form/MyOwnSelect.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/models/activity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/activity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/models/profile.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/profile.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/stores/activityStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/stores/activityStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/stores/commentStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/stores/commentStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/activities/details/ActivityDetailedChat.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/activities/details/ActivityDetailedChat.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/activities/details/ActivityDetailedHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/activities/details/ActivityDetailedHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/activities/details/ActivityDetailedSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/activities/details/ActivityDetailedSidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/activities/details/ActivityDetailedInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/activities/details/ActivityDetailedInfo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/activities/form/ActivityForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/activities/form/ActivityForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/profiles/ProfileActivities.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/profiles/ProfileActivities.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,12 +130,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="com.haulmont.rcb.palette" />
         <option value="com.haulmont.rcb.previews" />
         <option value="com.haulmont.rcb.index" />
         <option value="com.haulmont.rcb.useInitial" />
         <option value="com.haulmont.rcb.README" />
+        <option value="JavaScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -156,8 +207,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.localhost:3000" />
         <item itemvalue="npm.start" />
+        <item itemvalue="JavaScript Debug.localhost:3000" />
         <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
@@ -185,7 +236,17 @@
       <workItem from="1685980219542" duration="1830000" />
       <workItem from="1685998358251" duration="9282000" />
       <workItem from="1686089081944" duration="11852000" />
-      <workItem from="1686164045169" duration="1982000" />
+      <workItem from="1686164045169" duration="6907000" />
+      <workItem from="1686693471908" duration="3372000" />
+      <workItem from="1686784540300" duration="10412000" />
+      <workItem from="1686944335771" duration="1253000" />
+      <workItem from="1686945847224" duration="1673000" />
+      <workItem from="1687021365552" duration="2360000" />
+      <workItem from="1687028249242" duration="8800000" />
+      <workItem from="1687047072610" duration="1255000" />
+      <workItem from="1687087004124" duration="2631000" />
+      <workItem from="1687093319600" duration="4008000" />
+      <workItem from="1687215213975" duration="601000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1685492403187</created>
@@ -194,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685492403187</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add shesh">
+      <created>1686166142400</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686166142400</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,7 +281,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add" />
-    <option name="LAST_COMMIT_MESSAGE" value="add" />
+    <MESSAGE value="add shesh" />
+    <option name="LAST_COMMIT_MESSAGE" value="add shesh" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -224,23 +293,8 @@
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/app/stores/activityStore.ts</url>
-          <line>155</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/app/stores/activityStore.ts</url>
-          <line>159</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/app/stores/activityStore.ts</url>
-          <line>158</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/app/models/activity.ts</url>
-          <line>60</line>
+          <line>33</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -250,38 +304,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/app/models/profile.ts</url>
-          <line>31</line>
+          <line>32</line>
           <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/app/stores/activityStore.ts</url>
-          <line>201</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/features/activities/details/ActivityDetailedHeader.tsx</url>
-          <line>93</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/app/stores/activityStore.ts</url>
-          <line>57</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/app/stores/activityStore.ts</url>
-          <line>58</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/app/stores/activityStore.ts</url>
-          <line>35</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/app/stores/activityStore.ts</url>
-          <line>134</line>
-          <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/app/common/form/MySelectInput.tsx</url>
@@ -289,15 +313,94 @@
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/features/activities/details/ActivityDetailedHeader.tsx</url>
-          <line>94</line>
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/app/common/form/MySelectInput.tsx</url>
           <line>15</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/api/agent.ts</url>
+          <line>83</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/api/agent.ts</url>
+          <line>85</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/api/agent.ts</url>
+          <line>80</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/api/agent.ts</url>
+          <line>81</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/api/agent.ts</url>
+          <line>82</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/api/agent.ts</url>
+          <line>84</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/features/activities/details/ActivityDetailedInfo.tsx</url>
+          <line>27</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/features/profiles/ProfileActivities.tsx</url>
+          <line>15</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/stores/profileStore.ts</url>
+          <line>164</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/stores/profileStore.ts</url>
+          <line>178</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/api/agent.ts</url>
+          <line>109</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/stores/activityStore.ts</url>
+          <line>94</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/stores/activityStore.ts</url>
+          <line>113</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/features/profiles/ProfileActivities.tsx</url>
+          <line>24</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/stores/profileStore.ts</url>
+          <line>181</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/stores/commentStore.ts</url>
+          <line>14</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/stores/commentStore.ts</url>
+          <line>54</line>
+          <option name="timeStamp" value="86" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,11 +1,12 @@
 using Application.Core;
+using Application.VotingSystem;
 using AutoMapper;
 using Domain;
 using FluentValidation;
 using MediatR;
 using Persistence;
 
-namespace Application.VotingSystem
+namespace Application.Polls
 {
     public class Edit
     {

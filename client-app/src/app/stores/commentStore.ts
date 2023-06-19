@@ -52,7 +52,7 @@ export default class CommentStore {
     }
 
     addComment = async (values: any) => {
-        values.activityId = store.activityStore.selectedActivity?.id;
+        values.pollId = store.activityStore.selectedActivity?.id;
         try {
             await this.hubConnection?.invoke('SendComment', values);
         } catch (error) {

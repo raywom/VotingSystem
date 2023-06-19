@@ -26,7 +26,7 @@ namespace Persistence
         {
             base.OnModelCreating(builder);
 
-            builder.Entity<Vote>(x => x.HasKey(aa => new { aa.AppUserId, ActivityId = aa.PollId }));
+            builder.Entity<Vote>(x => x.HasKey(aa => new { aa.Id, aa.AppUserId, ActivityId = aa.PollId }));
 
             builder.Entity<Vote>()
                 .HasOne(u => u.AppUser)

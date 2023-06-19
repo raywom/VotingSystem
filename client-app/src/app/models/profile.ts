@@ -8,7 +8,8 @@ export interface Profile {
     followersCount: number;
     followingCount: number;
     following: boolean;
-    photos?: Photo[]
+    photos?: Photo[],
+    choiceId: string;
 }
 
 export class Profile implements Profile {
@@ -29,5 +30,5 @@ export interface UserActivity {
     id: string;
     title: string;
     category: string;
-    closeDate: Date;
+    date: Date;
 }

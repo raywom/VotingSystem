@@ -81,7 +81,9 @@ const Activities = {
     create: (activity: ActivityFormValues) => requests.post<void>(`/polls`, activity),
     update: (activity: ActivityFormValues) => requests.put<void>(`/polls/${activity.id}`, activity),
     delete: (id: string) => requests.del<void>(`/polls/${id}`),
-    attend: (id: string) => requests.post<void>(`/polls/${id}/attend`, {})
+    attend: (id: string, chosenOption: string) => requests.put<void>(`/polls/${id}/attend/${chosenOption}`, {}),
+    cancelVote: (id: string) => requests.del<void>(`/polls/${id}/stopVoting`),
+    cancelActivity: (id: string) => requests.post<void>(`/polls/${id}/cancel`, {})
 }
 
 const Account = {

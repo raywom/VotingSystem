@@ -25,18 +25,11 @@ interface Props {
 }
 
 export default observer(function ActivityDetailedHeader({ activity }: Props) {
-    const { activityStore: { updateAttendance, loading, cancelActivityToggle } } = useStore();
-    const [selectedOption, setSelectedOption] = useState<string | null>(null);
-
-    const handleSubmit = (values: Props) => {
-        // Handle form submission
-        console.log(values);
-    };
+    const { activityStore: { updateAttendance, loading, cancelVote, cancelActivityToggle } } = useStore();
+    const [selectedOption, setSelectedOption] = useState<string>("");
 
     const handleVote = () => {
-        // Handle the vote action here
-        // You can use the selectedOption value to perform the vote action
-        console.log("Voted for:", selectedOption);
+
     };
 
     return (
@@ -66,6 +59,29 @@ export default observer(function ActivityDetailedHeader({ activity }: Props) {
             </Segment>
             <Segment clearing attached='bottom'>
                 {activity.isHost ? (
+                        activity.isGoing ? (
+                            <>
+                            <Button
+                                color={activity.isCancelled ? 'green' : 'red'}
+                                floated='left'
+                                basic
+                                content={activity.isCancelled ? 'Re-activate Poll' : 'Cancel Poll'}
+                                onClick={cancelActivityToggle}
+                                loading={loading}
+                            />
+                            <Button
+                                as={Link}
+                                to={`/manage/${activity.id}`}
+                                color='orange'
+                                floated='right'
+                                disabled={activity.isCancelled}
+                            >
+                                Manage Poll
+                            </Button>
+                                <Button onClick={cancelVote}
+                                        loading={loading}>Cancel vote</Button>
+                            </>
+                            ) : (
                     <>
                         <Button
                             color={activity.isCancelled ? 'green' : 'red'}
@@ -84,28 +100,39 @@ export default observer(function ActivityDetailedHeader({ activity }: Props) {
                         >
                             Manage Poll
                         </Button>
-                    </>
-
-                ) : activity.isGoing ? (
-                    <Button onClick={updateAttendance}
-                            loading={loading}>Cancel attendance</Button>
-                ) : (
-                    <>
                         <MyOwnSelect
                             options={activity.choices}
-                            placeholder="Select an option"
-                            name="choice"
+                            placeholder='Select your choice'
+                            name='choice'
+                            onChange={setSelectedOption}
                         />
                         <Button
-                            onClick={handleVote}
-                            disabled={!selectedOption}
-                            loading={loading}
+                            onClick={() => updateAttendance(selectedOption)}
                             primary
                         >
                             Vote
                         </Button>
                     </>
-                )}
+                    )
+                ) : activity.isGoing ? (
+                    <Button onClick={cancelVote}
+                            loading={loading}>Cancel vote</Button>
+                ) : (
+                    <>
+                        <MyOwnSelect
+                            options={activity.choices}
+                            placeholder='Select your choice'
+                            name='choice'
+                            onChange={setSelectedOption}
+                        />
+                        <Button
+                            onClick={() => updateAttendance(selectedOption)}
+                            primary
+                        >
+                            Vote
+                        </Button>
+                    </>
+                    )}
             </Segment>
         </Segment.Group>
     )

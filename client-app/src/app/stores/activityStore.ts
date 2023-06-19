@@ -198,14 +198,16 @@ export default class ActivityStore {
         }
     }
 
-    updateAttendance = async () => {
+    cancelVote = async ()  => {
         const user = store.userStore.user;
         this.loading = true;
         try {
-            await agent.Activities.attend(this.selectedActivity!.id);
+            await agent.Activities.cancelVote(this.selectedActivity!.id);
             runInAction(() => {
                 if (this.selectedActivity?.isGoing) {
-                    this.selectedActivity.voters = this.selectedActivity.voters?.filter(a => a.username !== user?.username);
+                    this.selectedActivity.voters = this.selectedActivity.voters?.filter(
+                        (a) => a.username !== user?.username
+                    );
                     this.selectedActivity.isGoing = false;
                 } else {
                     const attendee = new Profile(user!);
@@ -213,18 +215,48 @@ export default class ActivityStore {
                     this.selectedActivity!.isGoing = true;
                 }
                 this.activityRegistry.set(this.selectedActivity!.id, this.selectedActivity!);
-            })
+            });
         } catch (error) {
             console.log(error);
         } finally {
-            runInAction(() => this.loading = false);
+            runInAction(() => {
+                this.loading = false;
+            });
         }
-    }
+    };
+
+
+    updateAttendance = async (chosenOption: string) => {
+        const user = store.userStore.user;
+        this.loading = true;
+        try {
+            await agent.Activities.attend(this.selectedActivity!.id, chosenOption); // Pass the chosenOption
+            runInAction(() => {
+                if (this.selectedActivity?.isGoing) {
+                    this.selectedActivity.voters = this.selectedActivity.voters?.filter(
+                        (a) => a.username !== user?.username
+                    );
+                    this.selectedActivity.isGoing = false;
+                }
+                else {
+                    const attendee = new Profile(user!);
+                    this.selectedActivity?.voters?.push(attendee);
+                    this.selectedActivity!.isGoing = true;
+                    window.location.reload();
+                }
+                this.activityRegistry.set(this.selectedActivity!.id, this.selectedActivity!);
+            });
+        } catch (error) {
+            console.log(error);
+        } finally {
+            runInAction(() => (this.loading = false));
+        }
+    };
 
     cancelActivityToggle = async () => {
         this.loading = true;
         try {
-            await agent.Activities.attend(this.selectedActivity!.id);
+            await agent.Activities.cancelActivity(this.selectedActivity!.id);
             runInAction(() => {
                 this.selectedActivity!.isCancelled = !this.selectedActivity!.isCancelled;
                 this.activityRegistry.set(this.selectedActivity!.id, this.selectedActivity!);

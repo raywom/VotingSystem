@@ -30,7 +30,8 @@ namespace Application.Core
                 .ForMember(d => d.FollowersCount, o => o.MapFrom(s => s.AppUser.Followers.Count))
                 .ForMember(d => d.FollowingCount, o => o.MapFrom(s => s.AppUser.Followings.Count))
                 .ForMember(d => d.Following,
-                    o => o.MapFrom(s => s.AppUser.Followers.Any(x => x.Observer.UserName == currentUsername)));
+                    o => o.MapFrom(s => s.AppUser.Followers.Any(x => x.Observer.UserName == currentUsername)))
+                .ForMember(d => d.ChoiceId, o => o.MapFrom(s => s.Choice.Id));
             CreateMap<AppUser, Profile>()
                 .ForMember(d => d.Image, s => s.MapFrom(o => o.Photos.FirstOrDefault(x => x.IsMain).Url))
                 .ForMember(d => d.FollowersCount, o => o.MapFrom(s => s.Followers.Count))

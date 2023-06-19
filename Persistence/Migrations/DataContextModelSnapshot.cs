@@ -104,9 +104,6 @@ namespace Persistence.Migrations
                     b.Property<string>("Title")
                         .HasColumnType("text");
 
-                    b.Property<int>("Votes")
-                        .HasColumnType("integer");
-
                     b.HasKey("Id");
 
                     b.HasIndex("PollId");
@@ -218,6 +215,9 @@ namespace Persistence.Migrations
 
             modelBuilder.Entity("Domain.Vote", b =>
                 {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uuid");
+
                     b.Property<string>("AppUserId")
                         .HasColumnType("text");
 
@@ -227,13 +227,12 @@ namespace Persistence.Migrations
                     b.Property<Guid>("ChoiceId")
                         .HasColumnType("uuid");
 
-                    b.Property<Guid>("Id")
-                        .HasColumnType("uuid");
-
                     b.Property<bool>("IsHost")
                         .HasColumnType("boolean");
 
-                    b.HasKey("AppUserId", "PollId");
+                    b.HasKey("Id", "AppUserId", "PollId");
+
+                    b.HasIndex("AppUserId");
 
                     b.HasIndex("ChoiceId");
 

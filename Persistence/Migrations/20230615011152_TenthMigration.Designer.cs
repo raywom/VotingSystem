@@ -12,8 +12,8 @@ using Persistence;
 namespace Persistence.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230523215836_SeventhMigration")]
-    partial class SeventhMigration
+    [Migration("20230615011152_TenthMigration")]
+    partial class TenthMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -107,9 +107,6 @@ namespace Persistence.Migrations
                     b.Property<string>("Title")
                         .HasColumnType("text");
 
-                    b.Property<int>("Votes")
-                        .HasColumnType("integer");
-
                     b.HasKey("Id");
 
                     b.HasIndex("PollId");
@@ -173,6 +170,9 @@ namespace Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
+                    b.Property<string>("AppUserId")
+                        .HasColumnType("text");
+
                     b.Property<string>("Category")
                         .HasColumnType("text");
 
@@ -188,10 +188,15 @@ namespace Persistence.Migrations
                     b.Property<bool>("IsCancelled")
                         .HasColumnType("boolean");
 
+                    b.Property<bool>("IsHost")
+                        .HasColumnType("boolean");
+
                     b.Property<string>("Title")
                         .HasColumnType("text");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AppUserId");
 
                     b.ToTable("Polls");
                 });
@@ -213,22 +218,25 @@ namespace Persistence.Migrations
 
             modelBuilder.Entity("Domain.Vote", b =>
                 {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
                     b.Property<string>("AppUserId")
                         .HasColumnType("text");
 
-                    b.Property<Guid>("PollId")
-                        .HasColumnType("uuid");
-
                     b.Property<Guid>("ChoiceId")
-                        .HasColumnType("uuid");
-
-                    b.Property<Guid>("Id")
                         .HasColumnType("uuid");
 
                     b.Property<bool>("IsHost")
                         .HasColumnType("boolean");
 
-                    b.HasKey("AppUserId", "PollId");
+                    b.Property<Guid>("PollId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AppUserId");
 
                     b.HasIndex("ChoiceId");
 
@@ -403,6 +411,15 @@ namespace Persistence.Migrations
                         .HasForeignKey("AppUserId");
                 });
 
+            modelBuilder.Entity("Domain.Poll", b =>
+                {
+                    b.HasOne("Domain.AppUser", "AppUser")
+                        .WithMany()
+                        .HasForeignKey("AppUserId");
+
+                    b.Navigation("AppUser");
+                });
+
             modelBuilder.Entity("Domain.UserFollowing", b =>
                 {
                     b.HasOne("Domain.AppUser", "Observer")
@@ -426,9 +443,7 @@ namespace Persistence.Migrations
                 {
                     b.HasOne("Domain.AppUser", "AppUser")
                         .WithMany("Votes")
-                        .HasForeignKey("AppUserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("AppUserId");
 
                     b.HasOne("Domain.Choice", "Choice")
                         .WithMany("Voters")

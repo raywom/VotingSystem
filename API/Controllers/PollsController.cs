@@ -35,6 +35,12 @@ namespace API.Controllers
             return HandleResult(await Mediator.Send(new Edit.Command { Poll = poll }));
         }
 
+        [HttpPost("{id}/cancel")]
+        public async Task<IActionResult> Cancel(Guid id)
+        {
+            return HandleResult(await Mediator.Send(new Cancel.Command { Id = id }));
+        }
+        
         [Authorize(Policy = "IsPollHost")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(Guid id)
@@ -42,10 +48,18 @@ namespace API.Controllers
             return HandleResult(await Mediator.Send(new Delete.Command { Id = id }));
         }
 
-        [HttpPost("{id}/attend")]
-        public async Task<IActionResult> Attend(Guid id)
+        [HttpPut("{id}/attend/{chosenOption}")]
+        public async Task<IActionResult> Attend(Guid id, Guid chosenOption)
         {
-            return HandleResult(await Mediator.Send(new UpdateVote.Command { Id = id }));
+            return HandleResult(await Mediator.Send(new UpdateVote.Command { Id = id, ChosenOption = chosenOption }));
         }
+        
+        [HttpDelete("{id}/stopVoting")]
+        public async Task<IActionResult> StopVoting(Guid id)
+        {
+            return HandleResult(await Mediator.Send(new StopVoting.Command { Id = id }));
+        }
+
+
     }
 }

@@ -24,8 +24,8 @@ export default observer(function ActivityForm() {
     const [activity, setActivity] = useState<ActivityFormValues>(new ActivityFormValues());
 
     const validationSchema = Yup.object({
-        title: Yup.string().required('The event title is required'),
-        category: Yup.string().required('The event category is required'),
+        title: Yup.string().required('The poll title is required'),
+        category: Yup.string().required('The poll category is required'),
         description: Yup.string().required(),
         closeDate: Yup.string().required('Date is required')
     })

@@ -7,7 +7,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Persistence.Migrations
 {
     /// <inheritdoc />
-    public partial class PostgresInitial : Migration
+    public partial class TenthMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -51,23 +51,6 @@ namespace Persistence.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Polls",
-                columns: table => new
-                {
-                    Id = table.Column<Guid>(type: "uuid", nullable: false),
-                    Title = table.Column<string>(type: "text", nullable: true),
-                    CreateDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    CloseDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    Description = table.Column<string>(type: "text", nullable: true),
-                    Category = table.Column<string>(type: "text", nullable: true),
-                    IsCancelled = table.Column<bool>(type: "boolean", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Polls", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -196,6 +179,30 @@ namespace Persistence.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Polls",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uuid", nullable: false),
+                    Title = table.Column<string>(type: "text", nullable: true),
+                    CreateDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    CloseDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    Description = table.Column<string>(type: "text", nullable: true),
+                    Category = table.Column<string>(type: "text", nullable: true),
+                    IsCancelled = table.Column<bool>(type: "boolean", nullable: false),
+                    IsHost = table.Column<bool>(type: "boolean", nullable: false),
+                    AppUserId = table.Column<string>(type: "text", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Polls", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Polls_AspNetUsers_AppUserId",
+                        column: x => x.AppUserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
                 name: "UserFollowings",
                 columns: table => new
                 {
@@ -225,7 +232,6 @@ namespace Persistence.Migrations
                 {
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
                     Title = table.Column<string>(type: "text", nullable: true),
-                    Votes = table.Column<int>(type: "integer", nullable: false),
                     PollId = table.Column<Guid>(type: "uuid", nullable: false)
                 },
                 constraints: table =>
@@ -270,20 +276,20 @@ namespace Persistence.Migrations
                 name: "Voters",
                 columns: table => new
                 {
-                    AppUserId = table.Column<string>(type: "text", nullable: false),
+                    Id = table.Column<Guid>(type: "uuid", nullable: false),
+                    AppUserId = table.Column<string>(type: "text", nullable: true),
                     PollId = table.Column<Guid>(type: "uuid", nullable: false),
                     IsHost = table.Column<bool>(type: "boolean", nullable: false),
                     ChoiceId = table.Column<Guid>(type: "uuid", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Voters", x => new { x.AppUserId, x.PollId });
+                    table.PrimaryKey("PK_Voters", x => x.Id);
                     table.ForeignKey(
                         name: "FK_Voters_AspNetUsers_AppUserId",
                         column: x => x.AppUserId,
                         principalTable: "AspNetUsers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_Voters_Choices_ChoiceId",
                         column: x => x.ChoiceId,
@@ -356,9 +362,19 @@ namespace Persistence.Migrations
                 column: "AppUserId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Polls_AppUserId",
+                table: "Polls",
+                column: "AppUserId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_UserFollowings_TargetId",
                 table: "UserFollowings",
                 column: "TargetId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Voters_AppUserId",
+                table: "Voters",
+                column: "AppUserId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Voters_ChoiceId",
@@ -405,13 +421,13 @@ namespace Persistence.Migrations
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
-                name: "AspNetUsers");
-
-            migrationBuilder.DropTable(
                 name: "Choices");
 
             migrationBuilder.DropTable(
                 name: "Polls");
+
+            migrationBuilder.DropTable(
+                name: "AspNetUsers");
         }
     }
 }
